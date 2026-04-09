@@ -1,5 +1,5 @@
 /* ===== Layout ===== */
-.app { max-width: 1100px; margin: 0 auto; padding: 16px 20px; }
+.app { max-width: 1400px; margin: 0 auto; padding: 20px 24px; }
 
 .header {
   display: flex; align-items: center; justify-content: space-between;
@@ -12,7 +12,7 @@
 
 /* ===== Sidebar (Students) ===== */
 .sidebar {
-  width: 220px; flex-shrink: 0;
+  width: 280px; flex-shrink: 0;
   background: var(--surface); border-radius: var(--radius-md);
   border: 1px solid var(--border); overflow: hidden;
 }
@@ -74,32 +74,32 @@
 .center-area { flex: 1; min-width: 0; }
 
 .blackboard {
-  text-align: center; padding: 5px 0 8px;
-  font-size: 0.72rem; font-weight: 500; color: var(--text-tertiary);
-  letter-spacing: 0.6em; margin-bottom: 12px;
-  border-bottom: 2px solid var(--border-strong);
+  text-align: center; padding: 10px 0 14px;
+  font-size: 0.9rem; font-weight: 600; color: var(--text-tertiary);
+  letter-spacing: 0.8em; margin-bottom: 20px;
+  border-bottom: 3px solid var(--border-strong);
 }
 
 .grid-wrapper {
   background: var(--surface); border-radius: var(--radius-md);
-  border: 1px solid var(--border); padding: 16px; margin-bottom: 16px;
+  border: 1px solid var(--border); padding: 24px; margin-bottom: 20px;
 }
 
 .seat-grid {
-  display: grid; gap: 8px;
+  display: grid; gap: 12px;
 }
 .seat {
   display: flex; flex-direction: column; align-items: center; justify-content: center;
-  padding: 8px 4px; min-height: 56px;
+  padding: 12px 6px; min-height: 80px;
   border: 2px solid var(--seat-empty-border);
   border-radius: var(--radius-sm); background: var(--seat-empty-bg);
   transition: background 0.08s, border-color 0.08s, transform 0.08s;
   position: relative; user-select: none;
 }
-.seat-number { font-size: 0.7rem; font-weight: 600; color: var(--text-secondary); }
+.seat-number { font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); }
 .seat-student {
-  font-size: 0.7rem; font-weight: 500; color: var(--text);
-  margin-top: 2px; max-width: 100%; overflow: hidden;
+  font-size: 0.95rem; font-weight: 700; color: var(--text);
+  margin-top: 4px; max-width: 100%; overflow: hidden;
   text-overflow: ellipsis; white-space: nowrap;
 }
 
